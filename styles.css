@@ -93,19 +93,19 @@ body{
 }
 
 #totalAmount{
-    width:165px;
+    max-width:165px;
 }
 
 #category{
-    width:165px;
+    max-width:165px;
 }
 
 #description{
-    width: 165px;
+    max-width: 165px;
 }
 
 #settingBudget{
-    width: 165px;
+    max-width: 165px;
 }
 
 
