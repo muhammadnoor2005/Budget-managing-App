@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Budgeting App</title>
+    <script src="./index.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+
+    <div id="headDiv">
+        <div id="dateDiv"></div> 
+        <div id="availableBalanceDiv">Available Balance: 00 Rupees</div>
+        <div id="noOfTransactions">No. of Transactions: 00</div>
+    </div>
+
+
+    <div>
+        <input type="button" name="AddBudget" value="Add Budget" onclick="addBudgetBox();" class="addBudgetButton">
+    </div>
+
+
+    <form id="enterBudgetBox" class="enterBudgetBoxPrevClass"  onsubmit="submitBudget(event)">
+        <div class="enterBudgetBoxBG">
+
+            <p>Add  Budget:</p>
+            <input type="number" name="settingBudget" placeholder="Enter Total Amount" id="settingBudget" required>
+
+            <div class="enterBudgetInnerDiv">
+                <input type="button" value="Cancel" name="cancelSubmit" class="cancelSubmit" onclick="cancelSettingBudget();">
+                <input type="submit" value="Set Budget" name="Submit" class="setBudgetButton">
+            </div> 
+
+        </div>
+    </form>
+
+
+    <div>
+        <input type="button" name="AddExpense" value="Add Expense" onclick="addExpenseFormCall()" class="addExpensePrevButton" id="addExpenseButton">
+    </div>
+
+
+    <form id="addExpenseForm" class="addExpenseFormPrevClass"  onsubmit="addExpenseFormSubmitCall(event)">
+        <div class="addExpenseFormBG">
+
+            <div class="dueDate">
+                <p>Due Date:<span class="star">*</span></p>
+            <input type="date" name="dueDate"  id="dueDate" required>
+            </div>
+
+            <div class="totalAmount">
+                <p>Total Amount:<span class="star">*</span></p>
+            <input type="number" name="totalAmount"  id="totalAmount" placeholder="Rs:" required> 
+            </div>
+
+            <div class="category">
+                <p>Category:<span class="star">*</span></p>
+            <input type="text" name="category" placeholder="Restaurant, clothes, shopping etc"  id="category" required>
+            </div>
+
+            <div class="description">
+                <p>Description:<span class="star">*</span></p>
+            <input type="text" name="description" id="description">
+            </div>
+
+            <div class="paymentDate">
+                <p>Payment Date:<span class="star">*</span></p>
+            <input type="date"  id="paymentDate">
+            </div>
+
+            <div class="submitCancelDiv">
+            <input type="button" name="cancelForm" value="Cancel" onclick="addExpenseFormCancelCall()" class="formCancelButton">
+            <input type="submit" name="submit2" value="Submit" class="formSubmitButton">
+            </div>
+
+        </div>
+    </form>
+
+    <div id="budgetUL"></div>
+
+</body>
+</html>

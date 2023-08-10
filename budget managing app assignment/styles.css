@@ -1,0 +1,247 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    margin: 2%;
+}
+
+
+.enterBudgetBoxPrevClass{
+    display: none;
+}
+
+ 
+.enterBudgetBoxNewClass{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.enterBudgetBoxBG{
+    background-color:white;
+    width: 170px;
+    height: 120px;
+    margin: 100px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: -4px 4px 5px  #081a01
+}
+
+
+#headDiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.enterBudgetInnerDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top:15px ;
+}
+
+
+.addExpenseFormPrevClass{
+    display: none;
+}
+
+
+.addExpenseFormNewClass{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.addExpenseFormBG{
+    height:450px;
+    width: 170px;
+    padding:2%;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 5px;
+    box-shadow: -4px 4px 5px  #081a01;
+}
+
+
+.submitCancelDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+#dueDate{
+    width: 165px;
+}
+
+
+#paymentDate{
+    width: 165px;
+}
+
+#totalAmount{
+    width:165px;
+}
+
+#category{
+    width:165px;
+}
+
+#description{
+    width: 165px;
+}
+
+#settingBudget{
+    width: 165px;
+}
+
+.formSubmitButton{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    border-color: rgb(0, 102, 255);
+}
+
+
+.formCancelButton{
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+    border-color: darkgray;
+}
+
+
+.setBudgetButton{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    border-color:rgb(0, 102, 255);
+
+}
+
+
+.cancelSubmit{
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+    border-color: darkgray;
+    
+}
+
+
+.addBudgetButton{
+    background-color: rgb(0, 102, 255);
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    border-color:rgb(0, 102, 255);
+    margin-top: 10px;
+}
+
+
+#dateDiv{
+    font-weight: 600;
+}
+
+
+.budgetDivinner{
+    background-color: aliceblue;
+    margin-top: 4px;
+    border: solid 3px lightgray;
+    max-width: 500px;
+    min-width:400px;
+    border-radius: 5px;
+    box-shadow: -4px 4px 5px  #081a01;
+    padding: 2.5%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+
+.star{
+    color: red;
+}
+
+
+.xButton{
+    background-color: rgb(192 181 191);
+    margin: 5px;
+    border-color: rgb(192 181 191);
+    color: rgb(00, 00, 00);
+    border-radius: 5px;
+    position: absolute;
+    left: 91%;
+    bottom: 30%;
+    font-family: monospace;
+}
+
+
+.addExpensePrevButton{
+    display:none
+}
+
+
+.addExpenseNewButton{
+    background-color: rgb(0, 255, 195);
+    color: black;
+    padding: 4px;
+    border-radius: 4px;
+    border-color:rgb(0, 255, 195);
+    margin-top: 10px;
+}
+
+
+#budgetUL{
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+
+.visibleCategory{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.visibleTotalAmount{
+    position: relative;
+    left:60%;
+    bottom:12px;
+    font-family: unset;
+}
+
+
+#availableBalanceDiv{
+    font-weight: 500;
+}
+
+
+#noOfTransactions{
+    font-weight: 500;
+}
+
+
+.visiblePaymentDate{
+    color:dimgray;
+
+}
